@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Selima';
+  src: url("../asset/font/selima/Selima.eot");
+  /* IE9 Compat Modes */
+  src: url("../asset/font/selima/Selima.woff2") format("woff2"), url("../asset/font/selima/Selima.woff") format("woff"), url("../asset/font/selima/Selima.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../asset/img/natural-wood-pattern.png);
+  min-height: 100vh;
+  padding: 0 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container.topLevel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: clamp(200px, 100%, 1400px);
+  margin: 3% auto;
+}
+
+.hero {
+  height: 340px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
+}
+
+.hero .glide {
+  height: 100%;
+}
+
+.hero .glide .glide__slide {
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hero .glide #nbbcGlide-welcome {
+  background-image: url(../asset/img/carousel/welcome/OrangeTrees3.jpg);
+  color: white;
+}
+
+.hero .glide #nbbcGlide-welcome h1 {
+  text-align: center;
+  font-size: clamp(3em, 4vw, 5em);
+  border: 10px solid white;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+.hero .glide #nbbcGlide-welcome h3 {
+  text-align: center;
+  font-size: clamp(0.87em, 1.2vw, 2em);
+  letter-spacing: .2em;
+  margin-top: 1em;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+.hero .glide #nnbcGlide-revival {
+  background-image: url(../asset/img/carousel/revival/PinkMountains.jpg);
+  color: white;
+}
+
+.hero .glide #nnbcGlide-revival h1 {
+  font-family: 'Selima';
+  font-size: clamp(4em, 7.5vw, 8em);
+  text-align: center;
+  letter-spacing: 0.15em;
+  position: relative;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  text-shadow: 4px 4px 0px #78F5AB;
+}
+
+.hero .glide #nnbcGlide-revival h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.85em, 1.25vw, 1.35em);
+  text-align: right;
+  letter-spacing: 0.15em;
+  margin-top: clamp(10px, -1vw, -10px);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+}
+
+.hero .glide #nnbcGlide-revival p {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1em, 1.25vw, 1.35em);
+  margin-bottom: -1.5vw;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+}
+
+.hero .glide #nnbcGlide-event2 {
+  background-image: url(../asset/img/WORKDAY.png);
+}
+
+.squares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 50%;
+  margin-top: 3%;
+}
+
+.squares .sq {
+  position: relative;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
+}
+
+.squares .sq::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 280px;
+  }
+  .squares {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 6%;
+  }
+  .squares .sq {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+    margin-bottom: 7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .glide__arrows {
+    display: none;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

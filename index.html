@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+<body>
+
+    <div class="container topLevel">
+
+        <div class="hero">
+
+          <div class="glide">
+              <div data-glide-el="track" class="glide__track">
+                  <ul class="glide__slides">
+                      <li class="glide__slide" id="nbbcGlide-welcome">
+                        <div class="event-container">
+                            <h1>WELCOME</h1>
+                            <h3>NEW BEGINNINGS BAPTIST CHURCH</h3>
+                        </div>
+                      </li>
+                      <li class="glide__slide" id="nnbcGlide-revival">
+                        <div class="event-container">
+                            <p>MAY 17 &nbsp; <em>thru</em> &nbsp; MAY 19</p>
+                            <h1>REVIVAL</h1>
+                            <h3>WITH DR. DAVID PEACOCK</h3>
+                        </div>
+                      </li>
+                      <li class="glide__slide" id="nnbcGlide-event2"></li>
+                  </ul>
+              </div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                  <button class="glide__bullet" data-glide-dir="=0"></button>
+                  <button class="glide__bullet" data-glide-dir="=1"></button>
+                  <button class="glide__bullet" data-glide-dir="=2"></button>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="squares">
+
+            <div class="sq"></div>
+            <div class="sq"></div>
+            <div class="sq"></div>
+            <div class="sq"></div>
+
+        </div>
+
+    </div>
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+        const config = {
+            type: "carousel",
+            autoplay: 5000
+        };
+        
+        new Glide('.glide', config).mount()
+    </script>
+</body>
+</html>
