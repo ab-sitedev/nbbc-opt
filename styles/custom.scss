@@ -38,13 +38,21 @@ body {
     .glide {
         height: 100%;
 
-        .glide__slide {
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+        .glide__track {
+            height: 100%;
+
+            .glide__slides {
+                height: 100%;
+            }
+
+            .glide__slide {
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
         }
 
         #nbbcGlide-welcome {

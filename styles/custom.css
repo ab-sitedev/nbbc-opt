@@ -46,7 +46,15 @@ body {
   height: 100%;
 }
 
-.hero .glide .glide__slide {
+.hero .glide .glide__track {
+  height: 100%;
+}
+
+.hero .glide .glide__track .glide__slides {
+  height: 100%;
+}
+
+.hero .glide .glide__track .glide__slide {
   background-position: center;
   background-size: cover;
   display: -webkit-box;

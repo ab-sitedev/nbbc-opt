@@ -1,0 +1,23 @@
+{
+  "name": "nbbc-optimized",
+  "version": "1.0.0",
+  "description": "Efficiency-focused re-write of NBBC's website",
+  "main": "index.html",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ab-sitedev/nbbc-opt.git"
+  },
+  "author": "Aaron Banister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab-sitedev/nbbc-opt/issues"
+  },
+  "homepage": "https://github.com/ab-sitedev/nbbc-opt#readme"
+}
