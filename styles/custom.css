@@ -150,10 +150,12 @@ body {
 
 .hero .glide #nnbcGlide-workday .event-container h1 {
   line-height: 69%;
+  font-weight: 700;
 }
 
 .hero .glide #nnbcGlide-workday .event-container h1#wd-top {
   font-size: clamp(4em, 8vw, 8em);
+  color: #222222;
 }
 
 .hero .glide #nnbcGlide-workday .event-container .wd-bottom {
