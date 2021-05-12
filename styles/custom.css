@@ -136,6 +136,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .hero .glide #nnbcGlide-workday .event-container {
@@ -172,6 +173,13 @@ body {
 .hero .glide #nnbcGlide-workday .event-container .wd-bottom h4 {
   color: white;
   font-size: clamp(1em, 1.75vw, 2.5em);
+}
+
+.hero .glide #nnbcGlide-workday .event-container p {
+  line-height: 0;
+  color: #b4b4b4;
+  position: absolute;
+  bottom: 60px;
 }
 
 .squares {
