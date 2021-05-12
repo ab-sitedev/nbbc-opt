@@ -175,13 +175,6 @@ body {
   font-size: clamp(1em, 1.75vw, 2.5em);
 }
 
-.hero .glide #nnbcGlide-workday .event-container p {
-  line-height: 0;
-  color: #b4b4b4;
-  position: absolute;
-  bottom: 60px;
-}
-
 .squares {
   display: -webkit-box;
   display: -ms-flexbox;
