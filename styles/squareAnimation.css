@@ -1,0 +1,83 @@
+.sq:hover * {
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.sq:hover .caption {
+  opacity: 100;
+}
+
+.sq:hover .title:before,
+.sq:hover .title:after,
+.sq:hover .title div:before,
+.sq:hover .title div:after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.sq:hover img {
+  opacity: 30%;
+}
+
+.sq .title:before,
+.sq .title:after,
+.sq .title div:before,
+.sq .title div:after {
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.sq .title:before, .sq .title:after {
+  /* Horizontal bars */
+  position: absolute;
+  content: '';
+  background-color: white;
+  height: 2px;
+  width: 590px;
+  z-index: 10;
+}
+
+.sq .title:before {
+  /* Horizontal bars */
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.sq .title:after {
+  /* Horizontal bars */
+  bottom: -13%;
+  right: 0;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+}
+
+.sq .title div:before, .sq .title div:after {
+  /* Vertical bars */
+  position: absolute;
+  content: '';
+  background-color: white;
+  height: 590px;
+  width: 2px;
+  z-index: 10;
+}
+
+.sq .title div:before {
+  /* Vertical bars */
+  bottom: 0;
+  left: -10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sq .title div:after {
+  /* Vertical bars */
+  right: -10%;
+  top: 13%;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+/*# sourceMappingURL=squareAnimation.css.map */

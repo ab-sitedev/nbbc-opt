@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./app/glide/css/glide.core.min.css">
     <link rel="stylesheet" href="./app/glide/css/glide.theme.min.css">
     <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/squareAnimation.css">
     <link rel="shortcut icon" href="./asset/img/Favicon.png">
 </head>
 <body>
@@ -61,10 +62,53 @@
 
         <div class="squares">
 
-            <div class="sq"></div>
-            <div class="sq"></div>
-            <div class="sq"></div>
-            <div class="sq"></div>
+            <div class="sq" id="sq-about">
+                <div class="caption">
+                    At New Beginnings Baptist Church, we are a family that welcomes you with open arms!
+                </div>
+                <div class="title">
+                    <div>
+                        <p>ABOUT<br><span>NBBC</span></p>
+                    </div>
+                </div>
+                <img src="./asset/img/NewLogoGrey750x750.png" alt="Logo">
+            </div>
+            <div class="sq" id="sq-connect">
+                <div class="caption">
+                    New Beginnings places a strong emphasis on Christian fellowship. We grow close to our church family through personal edification.
+                </div>
+                <div class="title">
+                    <div>
+                        <p>CONNECT<br><span>WITH US</span></p>
+                    </div>
+                </div>
+                <img src="./asset/img/connect-2.jpg" alt="Connect with Us">
+            </div>
+            <div class="sq" id="sq-archive">
+                <div class="caption">
+                    Miss a service? Click here to listen to the last month's sermon's!
+                </div>
+                <div class="title">
+                    <div>
+                        <p>SERMON<br><span>ARCHIVE</span></p>
+                    </div>
+                </div>
+                <img src="./asset/img/bible-min.jpg" alt="King James Bible">
+            </div>
+            <div class="sq" id="sq-contact">
+                <div class="caption">
+                    Phone<br>
+                    (615) 672-1121<br><br>
+                    E-Mail<br>
+                    nbbcmediaministry@gmail.com
+                </div>
+                <div class="title">
+                    <div>
+                        <p>CONTACT<br><span>&emsp;&nbsp;US&emsp;&nbsp;</span></p>
+                    </div>
+                </div>
+                <img src="./asset/img/contact.jpg" alt="Contact us">
+            </div>
 
         </div>
 
@@ -75,7 +119,7 @@
     <script>
         const config = {
             type: "carousel",
-            autoplay: 5000000
+            autoplay: 5000
         };
         
         new Glide('.glide', config).mount()
