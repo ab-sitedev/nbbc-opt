@@ -38,8 +38,8 @@ body {
 .hero {
   height: 340px;
   width: 100%;
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
-          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero .glide {
@@ -123,8 +123,53 @@ body {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
 }
 
-.hero .glide #nnbcGlide-event2 {
-  background-image: url(../asset/img/WORKDAY.png);
+.hero .glide #nnbcGlide-workday {
+  background: #222222;
+  background: -webkit-gradient(linear, left bottom, left top, from(#222222), color-stop(50%, #222222), color-stop(50%, #ffa030), to(#ffa030));
+  background: linear-gradient(0deg, #222222 0%, #222222 50%, #ffa030 50%, #ffa030 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .glide #nnbcGlide-workday .event-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .glide #nnbcGlide-workday .event-container h1 {
+  line-height: 69%;
+}
+
+.hero .glide #nnbcGlide-workday .event-container h1#wd-top {
+  font-size: clamp(4em, 8vw, 8em);
+}
+
+.hero .glide #nnbcGlide-workday .event-container .wd-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .glide #nnbcGlide-workday .event-container .wd-bottom h1 {
+  font-size: clamp(4em, 8vw, 8em);
+  color: #ffa030;
+}
+
+.hero .glide #nnbcGlide-workday .event-container .wd-bottom h4 {
+  color: white;
+  font-size: clamp(1em, 1.75vw, 2.5em);
 }
 
 .squares {
@@ -144,8 +189,8 @@ body {
   position: relative;
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
-          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 .squares .sq::before {
