@@ -4,6 +4,8 @@
   src: url("../asset/font/selima/Selima.eot");
   /* IE9 Compat Modes */
   src: url("../asset/font/selima/Selima.woff2") format("woff2"), url("../asset/font/selima/Selima.woff") format("woff"), url("../asset/font/selima/Selima.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 * {
@@ -17,7 +19,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../asset/img/natural-wood-pattern.png);
+  background-image: url(../asset/img/natural-wood-pattern.webp);
   min-height: 100vh;
   padding: 0 3%;
   font-family: 'Montserrat', sans-serif;
@@ -71,7 +73,7 @@ body {
 }
 
 .hero .glide #nbbcGlide-welcome {
-  background-image: url(../asset/img/carousel/welcome/OrangeTrees3.jpg);
+  background-image: url(../asset/img/carousel/welcome/OrangeTrees3.webp);
   color: white;
 }
 
@@ -84,7 +86,7 @@ body {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.65);
 }
 
-.hero .glide #nbbcGlide-welcome h3 {
+.hero .glide #nbbcGlide-welcome h2 {
   text-align: center;
   font-size: clamp(0.87em, 1.2vw, 2em);
   letter-spacing: .2em;
@@ -93,7 +95,7 @@ body {
 }
 
 .hero .glide #nnbcGlide-revival {
-  background-image: url(../asset/img/carousel/revival/PinkMountains.jpg);
+  background-image: url(../asset/img/carousel/revival/PinkMountains.webp);
   color: white;
 }
 
@@ -108,7 +110,7 @@ body {
   text-shadow: 4px 4px 0px #78F5AB;
 }
 
-.hero .glide #nnbcGlide-revival h3 {
+.hero .glide #nnbcGlide-revival h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(0.85em, 1.25vw, 1.35em);
   text-align: right;
@@ -171,7 +173,7 @@ body {
   color: #ffa030;
 }
 
-.hero .glide #nnbcGlide-workday .event-container .wd-bottom h4 {
+.hero .glide #nnbcGlide-workday .event-container .wd-bottom h2 {
   color: white;
   font-size: clamp(1em, 1.75vw, 2.5em);
 }
@@ -302,6 +304,14 @@ footer p {
   .glide__arrows {
     display: none;
   }
+  button.glide__bullet {
+    height: 48px;
+    width: 48px;
+    margin: 0 0.75em;
+  }
+  .glide__bullets {
+    bottom: .5em;
+  }
   .squares {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -316,7 +326,7 @@ footer p {
     font-size: 4.5vw;
   }
   footer p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=custom.css.map */

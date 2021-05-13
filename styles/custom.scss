@@ -3,7 +3,8 @@
     src: url('../asset/font/selima/Selima.eot'); /* IE9 Compat Modes */
     src: url('../asset/font/selima/Selima.woff2') format('woff2'), /* Super Modern Browsers */
          url('../asset/font/selima/Selima.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../asset/font/selima/Selima.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../asset/font/selima/Selima.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-display: swap;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap');
@@ -16,7 +17,7 @@
 
 body {
     display: flex;
-    background-image: url(../asset/img/natural-wood-pattern.png);
+    background-image: url(../asset/img/natural-wood-pattern.webp);
     min-height: 100vh;
     padding: 0 3%;
 
@@ -57,7 +58,7 @@ body {
         }
 
         #nbbcGlide-welcome {
-            background-image: url(../asset/img/carousel/welcome/OrangeTrees3.jpg);
+            background-image: url(../asset/img/carousel/welcome/OrangeTrees3.webp);
             color: white;
 
             h1 {
@@ -70,7 +71,7 @@ body {
                              0 0 8px rgba($color: #000000, $alpha: .65);
             }
 
-            h3 {
+            h2 {
                 text-align: center;
                 font-size: clamp(.87em, 1.2vw, 2em);
                 letter-spacing: .2em;
@@ -81,7 +82,7 @@ body {
         }
 
         #nnbcGlide-revival {
-            background-image: url(../asset/img/carousel/revival/PinkMountains.jpg);
+            background-image: url(../asset/img/carousel/revival/PinkMountains.webp);
             color: white;
 
             h1 {
@@ -94,7 +95,7 @@ body {
                 text-shadow: 4px 4px 0px #78F5AB;
             }
 
-            h3 {
+            h2 {
                 font-family: 'Montserrat', sans-serif;
                 font-size: clamp(.85em, 1.25vw, 1.35em);
                 text-align: right;
@@ -140,7 +141,7 @@ body {
                         color: #ffa030;
                     }
 
-                    h4 {
+                    h2 {
                         color: white;
                         font-size: clamp(1em, 1.75vw, 2.5em);
                     }
@@ -285,6 +286,16 @@ footer {
     .glide__arrows {
         display: none;
     }
+
+    button.glide__bullet {
+        height: 48px;
+        width: 48px;
+        margin: 0 0.75em;
+    }
+
+    .glide__bullets {
+        bottom: .5em;
+    }
     
     .squares {
         flex-wrap: wrap;
@@ -304,7 +315,7 @@ footer {
 
     footer {
         p {
-            font-size: 10px;
+            font-size: 12px;
         }
     }
 
