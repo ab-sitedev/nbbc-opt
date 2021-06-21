@@ -48,10 +48,12 @@ body::-webkit-scrollbar {
   width: 100%;
   -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
 }
 
 .hero .glide {
   height: 100%;
+  border-radius: 6px;
 }
 
 .hero .glide .glide__track {
@@ -60,6 +62,7 @@ body::-webkit-scrollbar {
 
 .hero .glide .glide__track .glide__slides {
   height: 100%;
+  border-radius: 6px;
 }
 
 .hero .glide .glide__track .glide__slide {
@@ -75,6 +78,7 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  border-radius: 6px;
 }
 
 .hero .glide #nbbcGlide-welcome {
@@ -204,6 +208,7 @@ body::-webkit-scrollbar {
           box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
   background-color: black;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .squares .sq::before {
