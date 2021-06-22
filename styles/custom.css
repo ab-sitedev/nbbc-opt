@@ -311,6 +311,9 @@ footer p {
   .hero {
     height: 280px;
   }
+  .hero .glide {
+    overflow-x: hidden;
+  }
   .glide__arrows {
     display: none;
   }
@@ -320,7 +323,7 @@ footer p {
     margin: 0 0.75em;
   }
   .glide__bullets {
-    bottom: .5em;
+    bottom: -2em;
   }
   .squares {
     -ms-flex-wrap: wrap;

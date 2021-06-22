@@ -291,6 +291,10 @@ footer {
 
     .hero {
         height: 280px;
+
+        .glide {
+            overflow-x: hidden;
+        }
     }
 
     .glide__arrows {
@@ -304,7 +308,7 @@ footer {
     }
 
     .glide__bullets {
-        bottom: .5em;
+        bottom: -2em;
     }
     
     .squares {
