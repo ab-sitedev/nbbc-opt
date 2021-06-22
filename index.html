@@ -9,6 +9,8 @@
     <meta name="KEYWORDS" content="White house, tennessee, tn, baptist, church, near me, near, me, new beginnings, new, beginnings, ministry, ministry services, bible study, bible, king james, king, james, worship services, worship, service, spirituality">
     <meta name="author" content="Aaron Banister - Aaron.banister@gmail.com">
 
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="script" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
     <link rel="preload" as="script" href="./app/glide/js/glide.min.js">
     <link rel="preload" as="style" href="./app/glide/css/glide.core.min.css">
     <link rel="preload" as="style" href="./app/glide/css/glide.theme.min.css">
@@ -18,6 +20,7 @@
     <link rel="preload" as="font" href="./asset/font/selima/Selima.woff2" crossorigin="anonymous">
     <link rel="preload" as="image" href="./asset/img/carousel/welcome/OrangeTrees3.webp">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./app/glide/css/glide.core.min.css">
     <link rel="stylesheet" href="./app/glide/css/glide.theme.min.css">
     <link rel="stylesheet" href="./styles/custom.css">
@@ -133,12 +136,46 @@
 
     <div class="fullscreenInvisibleButton invisible" id="back"></div>
     <div class="modal invisible" id="modAbout">
-        About
-        <button id="modCloseAbout">Close</button>
+        <div class="modTop">
+            About
+            <button id="modCloseAbout">Close</button>
+        </div>
+        <ul class="nav nav-pills nav-fill" id="aboutTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="aboutOurChurch_Pill" data-bs-toggle="tab" data-bs-target="#aboutOurChurch" type="button" role="tab" aria-controls="our church" aria-selected="true">Our Church</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="aboutOurBeliefs_Pill" data-bs-toggle="tab" data-bs-target="#aboutOurBeliefs" type="button" role="tab" aria-controls="our beliefs" aria-selected="false">Our Beliefs</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="aboutOurPastor_Pill" data-bs-toggle="tab" data-bs-target="#aboutOurPastor" type="button" role="tab" aria-controls="our pastor" aria-selected="false">Our Pastor</button>
+            </li>
+          </ul>
+        <div class="tab-content" id="aboutTabsContent">
+            <div class="tab-pane fade show active" id="aboutOurChurch" role="tabpanel" aria-labelledby="aboutOurChurch">Church</div>
+            <div class="tab-pane fade" id="aboutOurBeliefs" role="tabpanel" aria-labelledby="aboutOurBeliefs">Beliefs</div>
+            <div class="tab-pane fade" id="aboutOurPastor" role="tabpanel" aria-labelledby="aboutOurPastor">Pastor</div>
+        </div>
     </div>
     <div class="modal invisible" id="modConnect">
         Connect
         <button id="modCloseConnect">Close</button>
+        <ul class="nav nav-pills nav-fill" id="connectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="connectMinistries_Pill" data-bs-toggle="tab" data-bs-target="#connectMinistries" type="button" role="tab" aria-controls="ministries" aria-selected="true">Ministries</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="connectFelloship_Pill" data-bs-toggle="tab" data-bs-target="#connectFellowship" type="button" role="tab" aria-controls="fellowship" aria-selected="false">Fellowship</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="connectEvangelism_Pill" data-bs-toggle="tab" data-bs-target="#connectEvangelism" type="button" role="tab" aria-controls="evangelism" aria-selected="false">Evangelism</button>
+            </li>
+          </ul>
+        <div class="tab-content" id="connectTabsContent">
+            <div class="tab-pane fade show active" id="connectMinistries" role="tabpanel" aria-labelledby="connectMinistries">Ministries</div>
+            <div class="tab-pane fade" id="connectFellowship" role="tabpanel" aria-labelledby="connectFellowship">Fellowship</div>
+            <div class="tab-pane fade" id="connectEvangelism" role="tabpanel" aria-labelledby="connectEvangelism">Evangelism</div>
+        </div>
     </div>
     <div class="modal invisible" id="modArchive">
         Archive
@@ -161,5 +198,6 @@
     </script>
 
     <script src="./app/modals/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
