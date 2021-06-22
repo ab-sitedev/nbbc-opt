@@ -304,11 +304,12 @@ footer {
     button.glide__bullet {
         height: 48px;
         width: 48px;
+        border-radius: 0px;
         margin: 0 0.75em;
     }
 
     .glide__bullets {
-        bottom: -2em;
+        bottom: -2.75em;
     }
     
     .squares {
