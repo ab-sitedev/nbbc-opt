@@ -41,7 +41,7 @@
 
 .sq .title:before {
   /* Horizontal bars */
-  top: 0;
+  top: -2%;
   left: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -49,7 +49,7 @@
 
 .sq .title:after {
   /* Horizontal bars */
-  bottom: -13%;
+  bottom: 6%;
   right: 0;
   -webkit-transform: translateX(-40%);
           transform: translateX(-40%);
@@ -67,7 +67,7 @@
 
 .sq .title div:before {
   /* Vertical bars */
-  bottom: 0;
+  bottom: 20%;
   left: -10%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);

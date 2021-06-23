@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700&family=Rokkitt:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 @font-face {
   font-family: 'Selima';
   src: url("../asset/font/selima/Selima.eot");
@@ -162,13 +163,14 @@ body::-webkit-scrollbar {
 }
 
 .hero .glide #nnbcGlide-workday .event-container h1 {
-  line-height: 69%;
+  line-height: 58%;
   font-weight: 700;
 }
 
 .hero .glide #nnbcGlide-workday .event-container h1#wd-top {
   font-size: clamp(4em, 8vw, 8em);
   color: #222222;
+  margin-top: 10px;
 }
 
 .hero .glide #nnbcGlide-workday .event-container .wd-bottom {
@@ -261,6 +263,92 @@ body::-webkit-scrollbar {
   height: 100%;
   -webkit-transition: ease .4s;
   transition: ease .4s;
+}
+
+.modal * {
+  font-family: 'Rokkitt', serif;
+}
+
+.modal .modTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .modTop .modTitle {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.modal .modTop button {
+  all: unset;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: #ff605C;
+  position: relative;
+}
+
+.modal .modTop button:hover .closeLine span {
+  background: #923332;
+}
+
+.modal .modTop button .closeLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60%;
+  width: 60%;
+}
+
+.modal .modTop button .closeLine:first-child span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal .modTop button .closeLine span {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  height: 2px;
+  width: 100%;
+  background-color: #ff605C;
+}
+
+.modal button.nav-link {
+  font-size: 1.25em;
+  color: #555555;
+}
+
+.modal button.nav-link.active {
+  background-color: #fff;
+  color: #e9c46a;
+  font-weight: 600;
+}
+
+.modal .tab-content {
+  border: 1px solid #dee2e6;
+  border-top: unset;
+  padding: 2em 1em;
+}
+
+.modal .tab-content * {
+  font-family: 'PT Serif', serif;
 }
 
 footer {
