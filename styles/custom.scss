@@ -247,15 +247,17 @@ body {
 
         button {
             all: unset;
-            height: 24px;
-            width: 24px;
-            border-radius: 100%;
-            background-color: #ff605C;
+            height: 48px;
+            width: 48px;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
             position: relative;
 
             &:hover {
+                cursor: pointer;
+
                 .closeLine span {
-                    background: #923332;
+                    background-color: #777777;
                 }
             }
 
@@ -282,7 +284,7 @@ body {
                     transform: rotate(-45deg);
                     height: 2px;
                     width: 100%;
-                    background-color: #ff605C;
+                    background-color: #dee2e6;
                 }
             }
         }
@@ -302,10 +304,26 @@ body {
     .tab-content {
         border: 1px solid #dee2e6;
         border-top: unset;
-        padding: 2em 1em;
+        padding: 2em 4em;
 
         * {
             font-family: 'PT Serif', serif;
+        }
+
+        .feature {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #999999;
+
+            img {
+                width: 100%;
+                background-color: #777777;
+            }
         }
     }
 }
