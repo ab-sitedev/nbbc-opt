@@ -1,13 +1,8 @@
-$key-lime: #d9ed92ff;
-$yellow-green-crayola: #b5e48cff;
-$granny-smith-apple: #99d98cff;
-$ocean-green: #76c893ff;
-$keppel: #52b69aff;
-$viridian-green: #34a0a4ff;
-$blue-munsell: #168aadff;
-$celadon-blue: #1a759fff;
-$lapis-lazuli: #1e6091ff;
-$yale-blue: #184e77ff;
+$grullo: #9b8772;
+$slate-gray: #667983;
+$yale-blue: #33516c;
+$ochre: #c3782f;
+$new-york-pink: #e49086;
 
 @font-face {
     font-family: 'Selima';
@@ -304,7 +299,7 @@ body {
     }
 
     button.nav-link {
-        font-size: 1.25em;
+        font-size: 1.5em;
         color: #555555;
 
         &.active {
@@ -321,7 +316,8 @@ body {
         padding: 2em 4em;
 
         * {
-            font-family: 'PT Serif', serif;
+            font-family: 'Rokkitt', serif;
+            color: $slate-gray;
         }
 
         .feature {
@@ -331,7 +327,7 @@ body {
             border-radius: 10px;
             margin-bottom: 2em;
             overflow: hidden;
-            box-shadow: 0 5px 0 $ocean-green;
+            box-shadow: 0 5px 0 $new-york-pink;
 
             h1 {
                 position: absolute;
@@ -340,13 +336,20 @@ body {
                 transform: translate(-50%, -50%);
                 margin: 0 auto;
                 font-family: 'Selima';
-                font-size: 5em;
-                color: $key-lime;
+                font-size: 6em;
+                color: $new-york-pink;
                 text-shadow: 0 0 3px rgba($color: #000000, $alpha: .5),
                              0 0 8px rgba($color: #000000, $alpha: .65);
                 text-align: center;
                 white-space: nowrap;
+                line-height: 75%;
                 z-index: 1;
+
+                span {
+                    font-size: 50%;
+                    color: white;
+                    font-family: 'PT Serif', serif;
+                }
             }
 
             img {
@@ -356,7 +359,31 @@ body {
                 transform: translate(-50%, -50%);
                 max-width: 100%;
                 min-height: 100%;
-                filter: blur(3px) brightness(75%);
+                
+                &#featWelcome {
+                    filter: blur(8px) brightness(65%) saturate(150%);
+                }
+                &#featSoF {
+                    filter: blur(3px) brightness(65%) saturate(125%);
+                }
+            }
+        }
+
+        p {
+            font-size: 1.15em;
+        }
+
+        ol.roman {
+            list-style-type: upper-roman;
+            margin-left: 10px;
+
+            li, li * {
+                font-size: 1.15em;
+                font-family: 'Rokkitt', serif !important;
+
+                strong {
+                    color: $yale-blue;
+                }
             }
         }
     }

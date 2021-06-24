@@ -339,7 +339,7 @@ body::-webkit-scrollbar {
 }
 
 .modal button.nav-link {
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: #555555;
 }
 
@@ -357,7 +357,8 @@ body::-webkit-scrollbar {
 }
 
 .modal .tab-content * {
-  font-family: 'PT Serif', serif;
+  font-family: 'Rokkitt', serif;
+  color: #667983;
 }
 
 .modal .tab-content .feature {
@@ -367,8 +368,8 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   margin-bottom: 2em;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 0 #76c893ff;
-          box-shadow: 0 5px 0 #76c893ff;
+  -webkit-box-shadow: 0 5px 0 #e49086;
+          box-shadow: 0 5px 0 #e49086;
 }
 
 .modal .tab-content .feature h1 {
@@ -379,12 +380,19 @@ body::-webkit-scrollbar {
           transform: translate(-50%, -50%);
   margin: 0 auto;
   font-family: 'Selima';
-  font-size: 5em;
-  color: #d9ed92ff;
+  font-size: 6em;
+  color: #e49086;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.65);
   text-align: center;
   white-space: nowrap;
+  line-height: 75%;
   z-index: 1;
+}
+
+.modal .tab-content .feature h1 span {
+  font-size: 50%;
+  color: white;
+  font-family: 'PT Serif', serif;
 }
 
 .modal .tab-content .feature img {
@@ -395,8 +403,34 @@ body::-webkit-scrollbar {
           transform: translate(-50%, -50%);
   max-width: 100%;
   min-height: 100%;
-  -webkit-filter: blur(3px) brightness(75%);
-          filter: blur(3px) brightness(75%);
+}
+
+.modal .tab-content .feature img#featWelcome {
+  -webkit-filter: blur(8px) brightness(65%) saturate(150%);
+          filter: blur(8px) brightness(65%) saturate(150%);
+}
+
+.modal .tab-content .feature img#featSoF {
+  -webkit-filter: blur(3px) brightness(65%) saturate(125%);
+          filter: blur(3px) brightness(65%) saturate(125%);
+}
+
+.modal .tab-content p {
+  font-size: 1.15em;
+}
+
+.modal .tab-content ol.roman {
+  list-style-type: upper-roman;
+  margin-left: 10px;
+}
+
+.modal .tab-content ol.roman li, .modal .tab-content ol.roman li * {
+  font-size: 1.15em;
+  font-family: 'Rokkitt', serif !important;
+}
+
+.modal .tab-content ol.roman li strong, .modal .tab-content ol.roman li * strong {
+  color: #33516c;
 }
 
 footer {
