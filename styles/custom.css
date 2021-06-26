@@ -163,14 +163,14 @@ body::-webkit-scrollbar {
 }
 
 .hero .glide #nnbcGlide-workday .event-container h1 {
-  line-height: 58%;
+  line-height: 56%;
   font-weight: 700;
 }
 
 .hero .glide #nnbcGlide-workday .event-container h1#wd-top {
   font-size: clamp(4em, 8vw, 8em);
   color: #222222;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .hero .glide #nnbcGlide-workday .event-container .wd-bottom {
@@ -415,8 +415,57 @@ body::-webkit-scrollbar {
           filter: blur(3px) brightness(65%) saturate(125%);
 }
 
+.modal .tab-content .feature img#featGift {
+  -webkit-filter: blur(3px) brightness(45%) saturate(125%);
+          filter: blur(3px) brightness(45%) saturate(125%);
+}
+
+.modal .tab-content .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .tab-content .cta a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.modal .tab-content .cta a.btn svg {
+  fill: white;
+  margin: 0 1em 0 .25em;
+}
+
+.modal .tab-content .title {
+  margin-bottom: 2em;
+}
+
+.modal .tab-content .title h1 {
+  margin-bottom: 0;
+  line-height: 100%;
+  color: #212529;
+}
+
 .modal .tab-content p {
   font-size: 1.15em;
+  margin-bottom: 4em;
+}
+
+.modal .tab-content p#pastorBio {
+  margin-left: 1em;
+  padding-right: 4em;
 }
 
 .modal .tab-content ol.roman {
@@ -431,6 +480,13 @@ body::-webkit-scrollbar {
 
 .modal .tab-content ol.roman li strong, .modal .tab-content ol.roman li * strong {
   color: #33516c;
+}
+
+.modal .tab-content img#img_OurPastor {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 100%;
+  border: 10px solid #f1f3f4;
 }
 
 footer {
@@ -482,7 +538,7 @@ footer p {
     height: 280px;
   }
   .hero .glide {
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .glide__arrows {
     display: none;

@@ -140,14 +140,14 @@ body {
                 flex-direction: column;
 
                 h1 {
-                    line-height: 58%;
+                    line-height: 56%;
                     font-weight: 700;
                 }
 
                 h1#wd-top {
                     font-size: clamp(4em, 8vw, 8em);
                     color: #222222;
-                    margin-top: 10px;
+                    margin-top: 25px;
                 }
 
                 .wd-bottom {
@@ -366,11 +366,48 @@ body {
                 &#featSoF {
                     filter: blur(3px) brightness(65%) saturate(125%);
                 }
+                &#featGift {
+                    filter: blur(3px) brightness(45%) saturate(125%);
+                }
+            }
+        }
+
+        .cta {
+            display: flex;
+            justify-content: space-between;
+
+            a.btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5em;
+                color: white;
+
+                svg {
+                    fill: white;
+                    margin: 0 1em 0 .25em;
+                }
+            }
+        }
+
+        .title {
+            margin-bottom: 2em;
+
+            h1 {
+                margin-bottom: 0;
+                line-height: 100%;
+                color: #212529;
             }
         }
 
         p {
             font-size: 1.15em;
+            margin-bottom: 4em;
+
+            &#pastorBio {
+                margin-left: 1em;
+                padding-right: 4em;
+            }
         }
 
         ol.roman {
@@ -385,6 +422,13 @@ body {
                     color: $yale-blue;
                 }
             }
+        }
+
+        img#img_OurPastor {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 100%;
+            border: 10px solid hsl(186, 10%, 95%);
         }
     }
 }
@@ -453,7 +497,7 @@ footer {
         height: 280px;
 
         .glide {
-            overflow-x: hidden;
+            overflow-y: hidden;
         }
     }
 
