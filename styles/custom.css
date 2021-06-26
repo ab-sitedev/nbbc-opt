@@ -364,7 +364,7 @@ body::-webkit-scrollbar {
 .modal .tab-content .feature {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-radius: 10px;
   margin-bottom: 2em;
   overflow: hidden;
@@ -385,7 +385,7 @@ body::-webkit-scrollbar {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.65);
   text-align: center;
   white-space: nowrap;
-  line-height: 75%;
+  line-height: 70%;
   z-index: 1;
 }
 
@@ -441,6 +441,9 @@ body::-webkit-scrollbar {
           align-items: center;
   font-size: 1.5em;
   color: white;
+  background-color: #2F9FC2;
+  white-space: nowrap;
+  max-height: 54px;
 }
 
 .modal .tab-content .cta a.btn svg {
@@ -460,12 +463,21 @@ body::-webkit-scrollbar {
 
 .modal .tab-content p {
   font-size: 1.15em;
-  margin-bottom: 4em;
+}
+
+.modal .tab-content p:last-of-type {
+  margin-bottom: 3em;
 }
 
 .modal .tab-content p#pastorBio {
-  margin-left: 1em;
   padding-right: 4em;
+}
+
+.modal .tab-content p img {
+  max-height: 200px;
+  float: left;
+  margin-right: 1em;
+  border-radius: 6px;
 }
 
 .modal .tab-content ol.roman {
@@ -487,6 +499,22 @@ body::-webkit-scrollbar {
   max-width: 400px;
   border-radius: 100%;
   border: 10px solid #f1f3f4;
+}
+
+.modal .tab-content .pastorFamilyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
@@ -528,6 +556,27 @@ footer p {
   .squares .sq img {
     opacity: 0.8;
   }
+  .modal .tab-content {
+    padding: 2em 2em;
+  }
+  .modal .tab-content .feature {
+    height: 175px;
+  }
+  .modal .tab-content .feature h1 {
+    font-size: 4em;
+  }
+  .modal .tab-content .cta h1 {
+    font-size: 1.75em;
+  }
+  .modal .tab-content .cta a.btn {
+    font-size: 1em;
+  }
+  .modal .tab-content .tab-pane#aboutOurPastor .row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
   footer {
     padding: 1em 2em;
   }
@@ -564,6 +613,30 @@ footer p {
   }
   .squares .sq .title p {
     font-size: 4.5vw;
+  }
+  li.nav-item button.nav-link {
+    font-size: 1.25em;
+  }
+  div.modal {
+    padding: 1em;
+  }
+  .modal .tab-content {
+    padding: 0.75em 0.75em;
+  }
+  .modal .tab-content .feature {
+    height: 150px;
+  }
+  .modal .tab-content .feature h1 {
+    font-size: 2.5em;
+  }
+  .modal .tab-content p img {
+    max-height: 150px;
+  }
+  .modal .tab-content .cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer p {
     font-size: 12px;

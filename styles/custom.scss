@@ -2,6 +2,7 @@ $grullo: #9b8772;
 $slate-gray: #667983;
 $yale-blue: #33516c;
 $ochre: #c3782f;
+$ocean: #2F9FC2;
 $new-york-pink: #e49086;
 
 @font-face {
@@ -323,9 +324,9 @@ body {
         .feature {
             position: relative;
             width: 100%;
-            height: 300px;
+            height: 250px;
             border-radius: 10px;
-            margin-bottom: 2em;
+            margin-bottom: 2em; 
             overflow: hidden;
             box-shadow: 0 5px 0 $new-york-pink;
 
@@ -342,7 +343,7 @@ body {
                              0 0 8px rgba($color: #000000, $alpha: .65);
                 text-align: center;
                 white-space: nowrap;
-                line-height: 75%;
+                line-height: 70%;
                 z-index: 1;
 
                 span {
@@ -382,6 +383,9 @@ body {
                 align-items: center;
                 font-size: 1.5em;
                 color: white;
+                background-color: $ocean;
+                white-space: nowrap;
+                max-height: 54px;
 
                 svg {
                     fill: white;
@@ -402,11 +406,20 @@ body {
 
         p {
             font-size: 1.15em;
-            margin-bottom: 4em;
+
+            &:last-of-type {
+                margin-bottom: 3em;
+            }
 
             &#pastorBio {
-                margin-left: 1em;
                 padding-right: 4em;
+            }
+
+            img {
+                max-height: 200px;
+                float: left;
+                margin-right: 1em;
+                border-radius: 6px;
             }
         }
 
@@ -429,6 +442,13 @@ body {
             max-width: 400px;
             border-radius: 100%;
             border: 10px solid hsl(186, 10%, 95%);
+        }
+
+        .pastorFamilyContainer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
         }
     }
 }
@@ -485,6 +505,35 @@ footer {
         }
     }
 
+    .modal .tab-content {
+        padding: 2em 2em;
+
+        .feature {
+            height: 175px;
+
+            h1 {
+                font-size: 4em;
+            }
+        }
+
+        .cta {
+
+            h1 {
+                font-size: 1.75em;
+            }
+
+            a.btn {
+                font-size: 1em;
+            }
+        }
+
+        .tab-pane#aboutOurPastor {
+            .row {
+                flex-direction: column !important;
+            }
+        }
+    }
+
     footer {
         padding: 1em 2em;
     }
@@ -529,6 +578,34 @@ footer {
                     font-size: 4.5vw;
                 }
             }
+        }
+    }
+
+    li.nav-item button.nav-link {
+        font-size: 1.25em;
+    }
+
+    div.modal {
+        padding: 1em;
+    }
+
+    .modal .tab-content {
+        padding: 0.75em 0.75em;
+
+        .feature {
+            height: 150px;
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        p img {
+            max-height: 150px;
+        }
+
+        .cta {
+            flex-direction: column;
         }
     }
 
