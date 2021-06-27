@@ -258,7 +258,7 @@ body {
             all: unset;
             height: 48px;
             width: 48px;
-            border-radius: 100%;
+            border-radius: 6px;
             position: relative;
             background-color: #ff5f57;
             
@@ -532,6 +532,10 @@ footer {
             .row {
                 flex-direction: column !important;
             }
+
+            p#pastorBio {
+                padding: 0;
+            }
         }
     }
 
@@ -587,27 +591,36 @@ footer {
     }
 
     div.modal {
-        padding: 1em;
-    }
+        padding: 1em 1em 25vh 1em;
 
-    .modal .tab-content {
-        padding: 0.75em 0.75em;
-
-        .feature {
-            height: 150px;
-
-            h1 {
-                font-size: 2.5em;
+        .modTop {
+            button {
+                height: 28px;
+                width: 28px;
+                border-radius: 100%;
             }
         }
 
-        p img {
-            max-height: 150px;
+        .tab-content {
+            padding: 0.75em 0.75em;
+    
+            .feature {
+                height: 150px;
+    
+                h1 {
+                    font-size: 2.5em;
+                }
+            }
+    
+            p img {
+                max-height: 150px;
+            }
+    
+            .cta {
+                flex-direction: column;
+            }
         }
 
-        .cta {
-            flex-direction: column;
-        }
     }
 
     footer {

@@ -291,7 +291,7 @@ body::-webkit-scrollbar {
   all: unset;
   height: 48px;
   width: 48px;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   background-color: #ff5f57;
 }
@@ -578,6 +578,9 @@ footer p {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
+  .modal .tab-content .tab-pane#aboutOurPastor p#pastorBio {
+    padding: 0;
+  }
   footer {
     padding: 1em 2em;
   }
@@ -619,21 +622,26 @@ footer p {
     font-size: 1.25em;
   }
   div.modal {
-    padding: 1em;
+    padding: 1em 1em 25vh 1em;
   }
-  .modal .tab-content {
+  div.modal .modTop button {
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+  }
+  div.modal .tab-content {
     padding: 0.75em 0.75em;
   }
-  .modal .tab-content .feature {
+  div.modal .tab-content .feature {
     height: 150px;
   }
-  .modal .tab-content .feature h1 {
+  div.modal .tab-content .feature h1 {
     font-size: 2.5em;
   }
-  .modal .tab-content p img {
+  div.modal .tab-content p img {
     max-height: 150px;
   }
-  .modal .tab-content .cta {
+  div.modal .tab-content .cta {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
