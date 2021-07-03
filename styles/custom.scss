@@ -21,6 +21,27 @@ $new-york-pink: #e49086;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
 
 body {
@@ -239,7 +260,8 @@ body {
 }
 
 .modal {
-    background-color: lighten($color: #34a0a4, $amount: 60%);
+    background: #fff;
+
 
     * {
         font-family: 'Rokkitt', serif;
@@ -300,6 +322,30 @@ body {
         }
     }
 
+    .modBottom {
+        margin-top: 2em;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: white;
+            background-color: #ff5f57;
+            white-space: nowrap;
+            max-height: 54px;
+            transition: background-color 0s;
+
+            &:hover {
+                background-color: #ff4b41;
+                transition: background-color 0s;
+            }
+        }
+    }
+
     button.nav-link {
         font-size: 1.5em;
         color: #555555;
@@ -322,14 +368,19 @@ body {
             color: $slate-gray;
         }
 
-        .feature {
+        article.feature {
             position: relative;
             width: 100%;
-            height: 250px;
+            height: clamp(250px, 13vw, 350px);
             border-radius: 10px;
+            margin-top: 5em;
             margin-bottom: 2em; 
             overflow: hidden;
             box-shadow: 0 5px 0 $new-york-pink;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
 
             h1 {
                 position: absolute;
@@ -359,7 +410,7 @@ body {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                max-width: 100%;
+                width: 100%;
                 min-height: 100%;
                 
                 &#featWelcome {
@@ -371,6 +422,74 @@ body {
                 &#featGift {
                     filter: blur(3px) brightness(45%) saturate(125%);
                 }
+            }
+        }
+
+        section.scrollAnimation {
+            position: relative;
+            height: 50px;
+            width: 100%;
+
+            a {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                z-index: 2;
+                display: inline-block;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                letter-spacing: .1em;
+                text-decoration: none;
+                color: $new-york-pink;
+                transition: opacity .3s;
+                padding-top: 70px;
+
+                &:hover {
+                    opacity: .5;
+                }
+
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    width: 24px;
+                    height: 24px;
+                    margin-left: -12px;
+                    border-left: 1px solid $new-york-pink;
+                    border-bottom: 1px solid $new-york-pink;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    -webkit-animation: sdb05 1.5s infinite;
+                    animation: sdb05 1.5s infinite;
+                    box-sizing: border-box;
+                }
+
+                @-webkit-keyframes sdb05 {
+                    0% {
+                      -webkit-transform: rotate(-45deg) translate(0, 0);
+                      opacity: 0;
+                    }
+                    50% {
+                      opacity: 1;
+                    }
+                    100% {
+                      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+                      opacity: 0;
+                    }
+                  }
+                  @keyframes sdb05 {
+                    0% {
+                      transform: rotate(-45deg) translate(0, 0);
+                      opacity: 0;
+                    }
+                    50% {
+                      opacity: 1;
+                    }
+                    100% {
+                      transform: rotate(-45deg) translate(-20px, 20px);
+                      opacity: 0;
+                    }
+                  }
             }
         }
 
@@ -408,10 +527,6 @@ body {
         p {
             font-size: 1.15em;
 
-            &:last-of-type {
-                margin-bottom: 3em;
-            }
-
             &#pastorBio {
                 padding-right: 4em;
             }
@@ -419,7 +534,7 @@ body {
             img {
                 max-height: 200px;
                 float: left;
-                margin-right: 1em;
+                margin: 0.25em 1em 0.5em 0;
                 border-radius: 6px;
             }
         }
@@ -442,7 +557,12 @@ body {
             width: 100%;
             max-width: 400px;
             border-radius: 100%;
-            border: 10px solid hsl(186, 10%, 95%);
+            border: 7px solid hsl(186, 10%, 95%);
+        }
+
+        #aboutOurPastor h1 {
+            font-family: 'Selima';
+            font-size: clamp(26px, 7vw, 48px);
         }
 
         .pastorFamilyContainer {
@@ -530,7 +650,7 @@ footer {
 
         .tab-pane#aboutOurPastor {
             .row {
-                flex-direction: column !important;
+                flex-direction: column-reverse !important;
             }
 
             p#pastorBio {
