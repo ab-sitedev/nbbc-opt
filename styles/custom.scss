@@ -323,10 +323,11 @@ body {
     }
 
     .modBottom {
-        margin-top: 2em;
+        margin-top: 1em;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        flex-grow: 1;
 
         button {
             display: flex;
@@ -572,6 +573,66 @@ body {
             flex-direction: column;
         }
     }
+
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+
+        h1 {
+            margin-bottom: 0.75em;
+        }
+
+        .times {
+            .sermonTimes {
+                .grid_row {
+                    display: grid;
+                    grid-auto-flow: row;
+                }
+                .grid_column {
+                    display: grid;
+                    grid-template-columns: auto 60px;
+                }
+            }
+        }
+
+        .emailForm {
+            .relative {
+                position: relative;
+                height: 28px;
+                margin-bottom: 1.5em;
+                
+                label, input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    &:last-child {
+                        z-index: 1;
+                        left: 4px;
+                        top: 2px;
+                        transition: all .15s ease-in-out;
+                        transition-delay: 9999s;
+
+                        span {
+                            color: red;
+                        }
+                    }
+                }
+
+                input:focus + label,
+                textarea:focus + label {
+                    top: -18px;
+                    transition: all .15s ease-in-out;
+                    font-size: 90%;
+                }
+
+                &.textArea {
+                    height: 122px;
+                }
+            }
+        }
+    }
 }
 
 footer {
@@ -711,7 +772,7 @@ footer {
     }
 
     div.modal {
-        padding: 1em 1em 25vh 1em;
+        padding: 1em;
 
         .modTop {
             button {
@@ -741,12 +802,31 @@ footer {
             }
         }
 
+        .contactContainer {
+            grid-auto-flow: row;
+            grid-template-columns: unset;
+            justify-content: center;
+
+            h1 {
+                margin-top: 2em;
+            }
+        }
+        
     }
 
     footer {
         p {
             font-size: 12px;
         }
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .nav {
+        flex-wrap: unset;
+        flex-direction: column;
     }
 
 }

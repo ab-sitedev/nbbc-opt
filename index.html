@@ -140,7 +140,7 @@
             <div class="modTitle">
                 <strong>about</strong> nbbc
             </div>
-            <button class="closeModal" id="modCloseAbout">
+            <button class="closeModal" id="modExitAbout">
                 <div class="closeLine"><span></span></div>
                 <div class="closeLine"><span></span></div>
             </button>
@@ -242,7 +242,7 @@
             </div>
         </div>
         <div class="modBottom">
-            <button class="btn">Close</button>
+            <button class="btn" id="modCloseAbout">Close</button>
         </div>
     </div>
     <div class="modal invisible" id="modConnect">
@@ -250,7 +250,7 @@
             <div class="modTitle">
                 <strong>connect</strong> with us
             </div>
-            <button id="modCloseConnect">
+            <button id="modExitConnect">
                 <div class="closeLine"><span></span></div>
                 <div class="closeLine"><span></span></div>
             </button>
@@ -272,31 +272,111 @@
             <div class="tab-pane fade" id="connectEvangelism" role="tabpanel" aria-labelledby="connectEvangelism">Evangelism</div>
         </div>
         <div class="modBottom">
-            <button class="btn">Close</button>
+            <button class="btn" id="modCloseConnect">Close</button>
         </div>
     </div>
     <div class="modal invisible" id="modArchive">
         <div class="modTop">
-            Archive
-            <button id="modCloseArchive">
+            <div class="modTitle">
+                <strong>sermon</strong> archive
+            </div>
+            <button id="modExitArchive">
                 <div class="closeLine"><span></span></div>
                 <div class="closeLine"><span></span></div>
             </button>
         </div>
+        <ul class="nav nav-tabs nav-fill" id="archiveTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="archiveRecent_Pill" data-bs-toggle="tab" data-bs-target="#archiveRecent" type="button" role="tab" aria-controls="recent" aria-selected="true">Recent</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="archiveArchive_Pill" data-bs-toggle="tab" data-bs-target="#archiveArchive" type="button" role="tab" aria-controls="archive" aria-selected="false">Archive</button>
+            </li>
+          </ul>
+        <div class="tab-content" id="archiveTabsContent">
+            <div class="tab-pane fade show active" id="archiveRecent" role="tabpanel" aria-labelledby="archiveRecent">Recent</div>
+            <div class="tab-pane fade" id="archiveArchive" role="tabpanel" aria-labelledby="archiveArchive">Archive</div>
+        </div>
         <div class="modBottom">
-            <button class="btn">Close</button>
+            <button class="btn" id="modCloseArchive">Close</button>
         </div>
     </div>
     <div class="modal invisible" id="modContact">
         <div class="modTop">
-            Contact
-            <button id="modCloseContact">
+            <div class="modTitle">
+                <strong>contact</strong> us
+            </div>
+            <button id="modExitContact">
                 <div class="closeLine"><span></span></div>
                 <div class="closeLine"><span></span></div>
             </button>
         </div>
+        <div class="contactContainer">
+            <div class="map">
+                <iframe style="border:none; width:400px; margin:0 auto; display:block;" height="400px" allowfullscreen src="https://www.embed-leaflet.com/map?center=36.46300491338235, -86.6943023098888&zoom=15&style=&marker=true&popup=true&title=New Beginnings Baptist Church&enhancedScroll=true"></iframe>
+            </div>
+            <div class="times">
+                <h1>Service Times</h1>
+                <div class="sermonTimes">
+                    <div class="grid_column">
+                        <div class="grid_row">Sunday School</div>
+                        <div class="grid_row">10 AM</div>
+                    </div>
+                    <div class="grid_column">
+                        <div class="grid_row">Sunday Worship</div>
+                        <div class="grid_row">11 AM</div>
+                    </div>
+                    <br>
+                    <div class="grid_column">
+                        <div class="grid_row">Wednesday Prayer</div>
+                        <div class="grid_row">6 PM</div>
+                    </div>
+                    <div class="grid_column">
+                        <div class="grid_row">Wednesday Worship</div>
+                        <div class="grid_row">7 PM</div>
+                    </div>
+                </div>
+            </div>
+            <div class="emailForm">
+                <h1>E-Mail</h1>
+                <form action="POST" netlify="true" data-netlify-recaptcha="true" id="contact-form" name="contact-form">
+
+                    <!-- FULL NAME -->
+                    <div class="relative">
+                        <input type="text" id="fullname" name="fullname" required>
+                        <label for="fullname">Full Name <span>*</span></label>
+                    </div>
+
+                    <!-- EMAIL ADDRESS -->
+                    <div class="relative">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">E-Mail Address <span>*</span></label>
+                    </div>
+                    
+                    <!-- PHONE NUMBER -->
+                    <div class="relative">
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div class="relative textArea">
+                        <textarea name="message" id="message" form="contact-form" cols="30" rows="5" required></textarea>
+                        <label for="message">Message <span>*</span></label>
+                    </div>
+
+                    <!-- reCAPTCHA 2 -->
+                    <div data-netlify-recaptcha="true" id="recaptcha"></div>
+
+                    <!-- SUBMIT FORM -->
+                    <div>
+                        <input type="submit" value="Submit Form" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
         <div class="modBottom">
-            <button class="btn">Close</button>
+            <button class="btn" id="modCloseContact">Close</button>
         </div>
     </div>
 

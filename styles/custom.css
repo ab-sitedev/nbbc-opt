@@ -358,7 +358,7 @@ body::-webkit-scrollbar {
 }
 
 .modal .modBottom {
-  margin-top: 2em;
+  margin-top: 1em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,6 +366,9 @@ body::-webkit-scrollbar {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .modal .modBottom button {
@@ -651,6 +654,71 @@ body::-webkit-scrollbar {
           flex-direction: column;
 }
 
+.modal .contactContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .contactContainer h1 {
+  margin-bottom: 0.75em;
+}
+
+.modal .contactContainer .times .sermonTimes .grid_row {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.modal .contactContainer .times .sermonTimes .grid_column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 60px;
+      grid-template-columns: auto 60px;
+}
+
+.modal .contactContainer .emailForm .relative {
+  position: relative;
+  height: 28px;
+  margin-bottom: 1.5em;
+}
+
+.modal .contactContainer .emailForm .relative label, .modal .contactContainer .emailForm .relative input {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal .contactContainer .emailForm .relative label:last-child, .modal .contactContainer .emailForm .relative input:last-child {
+  z-index: 1;
+  left: 4px;
+  top: 2px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  -webkit-transition-delay: 9999s;
+          transition-delay: 9999s;
+}
+
+.modal .contactContainer .emailForm .relative label:last-child span, .modal .contactContainer .emailForm .relative input:last-child span {
+  color: red;
+}
+
+.modal .contactContainer .emailForm .relative input:focus + label,
+.modal .contactContainer .emailForm .relative textarea:focus + label {
+  top: -18px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  font-size: 90%;
+}
+
+.modal .contactContainer .emailForm .relative.textArea {
+  height: 122px;
+}
+
 footer {
   width: 100%;
   background: white;
@@ -755,7 +823,7 @@ footer p {
     font-size: 1.25em;
   }
   div.modal {
-    padding: 1em 1em 25vh 1em;
+    padding: 1em;
   }
   div.modal .modTop button {
     height: 28px;
@@ -780,8 +848,30 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  div.modal .contactContainer {
+    grid-auto-flow: row;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.modal .contactContainer h1 {
+    margin-top: 2em;
+  }
   footer p {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=custom.css.map */

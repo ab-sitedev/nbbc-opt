@@ -13,6 +13,12 @@ var modConnect = document.getElementById('modConnect');
 var modArchive = document.getElementById('modArchive');
 var modContact = document.getElementById('modContact');
 
+// Get exit button
+var btnExitAbout = document.getElementById('modExitAbout');
+var btnExitConnect = document.getElementById('modExitConnect');
+var btnExitArchive = document.getElementById('modExitArchive');
+var btnExitContact = document.getElementById('modExitContact');
+
 // Get close button
 var btnCloseAbout = document.getElementById('modCloseAbout');
 var btnCloseConnect = document.getElementById('modCloseConnect');
@@ -54,6 +60,71 @@ sqContact.onclick = function() {
     modContact.classList.remove('invisible');
     back.classList.add('visible');
     back.classList.remove('invisible');
+}
+
+// Close modal when Exit button is clicked
+btnExitAbout.onclick = function() {
+    console.log('You clicked the exit button');
+
+    modAbout.classList.remove('visible');
+    modAbout.classList.add('invisible');
+    modConnect.classList.remove('visible');
+    modConnect.classList.add('invisible');
+    modArchive.classList.remove('visible');
+    modArchive.classList.add('invisible');
+    modContact.classList.remove('visible');
+    modContact.classList.add('invisible');
+
+    back.classList.remove('visible');
+    back.classList.add('invisible');
+}
+
+btnExitConnect.onclick = function() {
+    console.log('You clicked the exit button');
+
+    modAbout.classList.remove('visible');
+    modAbout.classList.add('invisible');
+    modConnect.classList.remove('visible');
+    modConnect.classList.add('invisible');
+    modArchive.classList.remove('visible');
+    modArchive.classList.add('invisible');
+    modContact.classList.remove('visible');
+    modContact.classList.add('invisible');
+
+    back.classList.remove('visible');
+    back.classList.add('invisible');
+}
+
+btnExitArchive.onclick = function() {
+    console.log('You clicked the exit button');
+
+    modAbout.classList.remove('visible');
+    modAbout.classList.add('invisible');
+    modConnect.classList.remove('visible');
+    modConnect.classList.add('invisible');
+    modArchive.classList.remove('visible');
+    modArchive.classList.add('invisible');
+    modContact.classList.remove('visible');
+    modContact.classList.add('invisible');
+
+    back.classList.remove('visible');
+    back.classList.add('invisible');
+}
+
+btnExitContact.onclick = function() {
+    console.log('You clicked the exit button');
+
+    modAbout.classList.remove('visible');
+    modAbout.classList.add('invisible');
+    modConnect.classList.remove('visible');
+    modConnect.classList.add('invisible');
+    modArchive.classList.remove('visible');
+    modArchive.classList.add('invisible');
+    modContact.classList.remove('visible');
+    modContact.classList.add('invisible');
+
+    back.classList.remove('visible');
+    back.classList.add('invisible');
 }
 
 // Close modal when Close button is clicked
