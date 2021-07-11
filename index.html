@@ -313,7 +313,7 @@
         </div>
         <div class="contactContainer">
             <div class="map">
-                <div class="powr-map" id="ed101ddc_1570726937"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7631.705427711498!2d-86.6925676554429!3d36.46391483642576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88644e8ef1cef613%3A0x5d59e6974faffd2a!2sNew%20Beginnings%20Baptist%20Church!5e0!3m2!1sen!2sus!4v1626020453897!5m2!1sen!2sus" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="times">
                 <h1>Service Times</h1>
@@ -338,30 +338,34 @@
                 </div>
             </div>
             <div class="emailForm">
-                <h1>E-Mail</h1>
                 <form action="POST" netlify="true" data-netlify-recaptcha="true" id="contact-form" name="contact-form">
 
-                    <!-- FULL NAME -->
-                    <div class="relative">
-                        <input type="text" id="fullname" name="fullname" required>
-                        <label for="fullname">Full Name <span>*</span></label>
+                    <div id="formTitle-wrapper">
+                        <h1>Contact Us</h1>
+                        <h2>We'll get back to you at our soonest opportunity.</h2>
+                    </div>
+
+                    <!-- FIRST NAME -->
+                    <div class="relative" id="firstName-wrapper">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="firstName">First Name <span>*</span></label>
+                    </div>
+
+                    <!-- LAST NAME -->
+                    <div class="relative" id="lastName-wrapper">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="lastName">Last Name <span>*</span></label>
                     </div>
 
                     <!-- EMAIL ADDRESS -->
-                    <div class="relative">
+                    <div class="relative" id="email-wrapper">
                         <input type="email" id="email" name="email" required>
                         <label for="email">E-Mail Address <span>*</span></label>
                     </div>
-                    
-                    <!-- PHONE NUMBER -->
-                    <div class="relative">
-                        <input type="tel" id="phone" name="phone">
-                        <label for="phone">Phone Number</label>
-                    </div>
 
                     <!-- MESSAGE -->
-                    <div class="relative textArea">
-                        <textarea name="message" id="message" form="contact-form" cols="30" rows="5" required></textarea>
+                    <div class="relative textArea" id="message-wrapper">
+                        <textarea name="message" id="message" form="contact-form" required></textarea>
                         <label for="message">Message <span>*</span></label>
                     </div>
 
@@ -369,7 +373,7 @@
                     <div data-netlify-recaptcha="true" id="recaptcha"></div>
 
                     <!-- SUBMIT FORM -->
-                    <div>
+                    <div id="submit-wrapper">
                         <input type="submit" value="Submit Form" id="submit">
                     </div>
                 </form>
