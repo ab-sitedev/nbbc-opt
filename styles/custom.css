@@ -301,7 +301,7 @@ body::-webkit-scrollbar {
 }
 
 .modal .modTop .modTitle {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: 1em;
 }
 
@@ -385,7 +385,7 @@ body::-webkit-scrollbar {
   color: white;
   background-color: #ff5f57;
   white-space: nowrap;
-  max-height: 54px;
+  max-height: 48px;
   -webkit-transition: background-color 0s;
   transition: background-color 0s;
 }
@@ -416,7 +416,32 @@ body::-webkit-scrollbar {
 
 .modal .tab-content * {
   font-family: 'Rokkitt', serif;
-  color: #667983;
+}
+
+.modal .tab-content .tab-pane * {
+  color: #212529;
+}
+
+.modal .tab-content .tab-pane h1 {
+  margin-bottom: 2em;
+  font-size: 1.75em;
+}
+
+.modal .tab-content .tab-pane h2 {
+  margin-bottom: 0.5em;
+  margin-left: 25px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.modal .tab-content .tab-pane p {
+  margin-bottom: 4em;
+  margin-left: 25px;
+  color: #65727e;
+}
+
+.modal .tab-content .tab-pane ul li {
+  color: #65727e;
 }
 
 .modal .tab-content article.feature {
@@ -587,11 +612,11 @@ body::-webkit-scrollbar {
   margin: 0 1em 0 .25em;
 }
 
-.modal .tab-content .title {
+.modal .tab-content .tab-pane#aboutOurPastor .title {
   margin-bottom: 2em;
 }
 
-.modal .tab-content .title h1 {
+.modal .tab-content .tab-pane#aboutOurPastor .title h1 {
   margin-bottom: 0;
   line-height: 100%;
   color: #212529;
