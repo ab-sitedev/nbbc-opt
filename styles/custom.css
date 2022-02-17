@@ -103,11 +103,12 @@ body::-webkit-scrollbar {
 .hero .glide #nbbcGlide-welcome {
   background-image: url(../asset/img/carousel/welcome/OrangeTrees3.webp);
   color: white;
+  padding: 1em;
 }
 
 .hero .glide #nbbcGlide-welcome h1 {
   text-align: center;
-  font-size: clamp(3em, 4vw, 5em);
+  font-size: clamp(2.2em, 4vw, 5em);
   border: 10px solid white;
   padding: 0 20px;
   background: rgba(255, 255, 255, 0.25);
@@ -116,7 +117,7 @@ body::-webkit-scrollbar {
 
 .hero .glide #nbbcGlide-welcome h2 {
   text-align: center;
-  font-size: clamp(0.87em, 1.2vw, 2em);
+  font-size: clamp(0.8em, 1.2vw, 2em);
   letter-spacing: .2em;
   margin-top: 1em;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.65);
@@ -394,6 +395,12 @@ body::-webkit-scrollbar {
   background-color: #ff4b41;
   -webkit-transition: background-color 0s;
   transition: background-color 0s;
+}
+
+.modal .nav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 1em;
 }
 
 .modal button.nav-link {
@@ -883,6 +890,7 @@ footer p {
   }
   footer {
     padding: 1em 2em;
+    margin-top: 30px;
   }
 }
 
@@ -963,14 +971,26 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .nav {
     -ms-flex-wrap: unset;
         flex-wrap: unset;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  }
+  .hero .glide #nbbcGlide-welcome h1 {
+    padding: 5px 15px;
+    border: 6px solid white;
+  }
+  footer {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  button.nav-link {
+    padding: 0.5rem;
+  }
+  .hero {
+    height: 220px;
   }
 }
 /*# sourceMappingURL=custom.css.map */
